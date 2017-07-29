@@ -33,7 +33,8 @@ class ViewController: UIViewController {
 
     }
 
-    override func viewDidLoad() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         // get value from user default
         let defaults = UserDefaults.standard
         let value = defaults.double(forKey: "defaultTipPercentage")
@@ -43,6 +44,16 @@ class ViewController: UIViewController {
         tipControl.selectedSegmentIndex = index
         // trigger tipControlValueChanged function
         calculateTip(self)
+        tipLabel.alpha = 0
+        totalLabel.alpha = 0
+        tipControl.alpha = 0
+        billField.alpha = 0
+        UIView.animate(withDuration: 0.4) {
+            self.totalLabel.alpha = 1
+            self.tipControl.alpha = 1
+            self.billField.alpha = 1
+            self.tipLabel.alpha = 1
+        }
     }
 }
 

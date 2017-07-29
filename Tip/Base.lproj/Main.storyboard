@@ -59,16 +59,13 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfl-ih-5x2">
-                                <rect key="frame" x="229" y="165" width="130" height="21"/>
+                                <rect key="frame" x="79" y="165" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcA-0d-kGh">
-                                <rect key="frame" x="255" y="247" width="104" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="104" id="v8i-cN-jUA"/>
-                                </constraints>
+                                <rect key="frame" x="79" y="247" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -100,11 +97,11 @@
                             <constraint firstItem="EFG-eI-bxy" firstAttribute="top" secondItem="cQJ-zD-eD3" secondAttribute="bottom" constant="22" id="2Ii-Vg-8r5"/>
                             <constraint firstItem="Jvu-HZ-Fh8" firstAttribute="leading" secondItem="2mv-03-h1U" secondAttribute="trailing" constant="17" id="3Xq-Cd-fY0"/>
                             <constraint firstAttribute="leadingMargin" secondItem="2mv-03-h1U" secondAttribute="leading" id="4Rd-JO-ErF"/>
+                            <constraint firstItem="mfl-ih-5x2" firstAttribute="leading" secondItem="UzB-Q3-GBX" secondAttribute="trailing" constant="13" id="5JS-Eh-EUA"/>
                             <constraint firstAttribute="leadingMargin" secondItem="EFG-eI-bxy" secondAttribute="leading" id="8C2-DH-puB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cQJ-zD-eD3" secondAttribute="trailing" id="CdF-dD-Osu"/>
                             <constraint firstItem="mfl-ih-5x2" firstAttribute="baseline" secondItem="UzB-Q3-GBX" secondAttribute="baseline" id="GiA-TV-CTK"/>
                             <constraint firstItem="cQJ-zD-eD3" firstAttribute="top" secondItem="UzB-Q3-GBX" secondAttribute="bottom" constant="29" id="O1i-M9-88Q"/>
-                            <constraint firstItem="mfl-ih-5x2" firstAttribute="leading" secondItem="UzB-Q3-GBX" secondAttribute="trailing" constant="163" id="RHt-aK-PCF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mfl-ih-5x2" secondAttribute="trailing" id="Syn-Yk-51T"/>
                             <constraint firstItem="ZGA-vw-goY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VpX-Jm-kDR"/>
                             <constraint firstAttribute="leadingMargin" secondItem="UzB-Q3-GBX" secondAttribute="leading" id="ZfU-lz-eh5"/>
@@ -116,7 +113,7 @@
                             <constraint firstItem="PcA-0d-kGh" firstAttribute="baseline" secondItem="EFG-eI-bxy" secondAttribute="baseline" id="lQX-RE-E8m"/>
                             <constraint firstItem="ZGA-vw-goY" firstAttribute="top" secondItem="EFG-eI-bxy" secondAttribute="bottom" constant="45" id="orm-v7-Ota"/>
                             <constraint firstItem="2mv-03-h1U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="x4P-4V-nLo"/>
-                            <constraint firstItem="PcA-0d-kGh" firstAttribute="leading" secondItem="EFG-eI-bxy" secondAttribute="trailing" constant="193" id="zP2-to-Zsh"/>
+                            <constraint firstItem="PcA-0d-kGh" firstAttribute="leading" secondItem="EFG-eI-bxy" secondAttribute="trailing" constant="17" id="zRu-nf-Irf"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="1Vt-By-Bpe" appends="YES" id="CjF-lS-SeR"/>

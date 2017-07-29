@@ -17,20 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
 
-
-    override func viewDidLoad() {
-        // get value from user default
-        let defaults = UserDefaults.standard
-        let value = defaults.double(forKey: "defaultTipPercentage")
-        // get index based on user default
-        let index = tipPercentages.index(of: value) ?? 0
-        // set index on segment control
-        tipControl.selectedSegmentIndex = index
-        // trigger tipControlValueChanged function
-        calculateTip(self)
-    }
-
-
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
@@ -45,6 +31,18 @@ class ViewController: UIViewController {
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
 
+    }
+
+    override func viewDidLoad() {
+        // get value from user default
+        let defaults = UserDefaults.standard
+        let value = defaults.double(forKey: "defaultTipPercentage")
+        // get index based on user default value
+        let index = tipPercentages.index(of: value) ?? 0
+        // set index on segment control
+        tipControl.selectedSegmentIndex = index
+        // trigger tipControlValueChanged function
+        calculateTip(self)
     }
 }
 
